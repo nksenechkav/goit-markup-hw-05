@@ -592,6 +592,7 @@ color: #F4F4FD;
     position: absolute;
     right: 24px;
     top: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .modal-btn-icon {
@@ -599,6 +600,7 @@ color: #F4F4FD;
     height: 8px;
     fill: #2E2F42;
     vertical-align: middle;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 
@@ -702,6 +704,7 @@ color: #F4F4FD;
     align-items: center;
     gap: 8px;
     margin-bottom: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .check-text a {
     color: #4D5AE5;
@@ -717,6 +720,7 @@ color: #F4F4FD;
     width: 16px;
     height: 16px;
     fill: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .check-input:checked + .check-text span {
     background-color: #404BBF;

@@ -542,8 +542,17 @@ color: #F4F4FD;
     width: 8px;
     height: 8px;
     fill: #2E2F42;
+    vertical-align: middle;
   }
-  
+
+
+.modal-btn:hover {
+    background-color:#404bbf;
+    border: none;
+}
+.modal-btn:hover .modal-btn-icon{
+    fill:#E7E9FC;
+}
   .modal-title {
     max-width: 360px;
     margin-bottom: 16px;
@@ -626,6 +635,39 @@ color: #F4F4FD;
     visibility: visible;
     pointer-events: auto;
   }
-  .modal-btn-submit {
+
+  .check-text {
+    color: #8E8F99;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  
+  }
+  .check-link {
+    color: #4D5AE5;
+    text-decoration: underline;
+  }
+  .check-box {
+    display: inline-block;
+    background-color:#FCFCFC;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    border-radius: 1px;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    margin-bottom: 24px;
+  }
+  .check-icon {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    visibility: hidden;
+  }
+  .check-input:checked + .check-text .check-box .check-icon {
+    visibility: visible;
+  }
+  .check-input:checked + .check-text .check-box {
+    visibility: hidden;
   }
 /** ================================= */

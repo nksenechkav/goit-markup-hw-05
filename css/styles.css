@@ -439,7 +439,7 @@ padding-bottom: 100px;
    margin-right: 120px;;
 }
 .footer-soc-wrap {
-    
+   margin-right: 80px; 
 }
   
 .footer-soc-list {
@@ -498,6 +498,62 @@ max-width: 264px;
 color: #F4F4FD;
 }
 
+.footer-form-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.footer-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background: transparent;
+  padding: 0 16px;
+}
+.footer-form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.footer-form-subtitle {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 75px;
+  margin-bottom: 16px;
+}
+.footer-input::placeholder {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2.0;
+  letter-spacing: 0.02em;
+}
+.footer-form-btn {
+  width: 165px;
+  height: 40px;
+  border-radius: 4px;
+  background: #4D5AE5;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  padding: 8px 24px;
+  position: relative;
+  display: flex;
+}
+.footer-form-icon {
+  position: absolute;
+  top: 8px;
+  right: 24px;
+  fill: #FFF;
+}
 /** ================================= */
 
 /** ==============MODAL WINDOW============== */
@@ -642,32 +698,29 @@ color: #F4F4FD;
     font-weight: 400;
     line-height: 1.16;
     letter-spacing: 0.02em;
-  
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
   }
-  .check-link {
+  .check-text a {
     color: #4D5AE5;
     text-decoration: underline;
   }
-  .check-box {
-    display: inline-block;
+  .check-text span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color:#FCFCFC;
     border: 1px solid rgba(46, 47, 66, 0.40);
-    border-radius: 1px;
+    border-radius: 2px;
     width: 16px;
     height: 16px;
-    margin-right: 8px;
-    margin-bottom: 24px;
+    fill: transparent;
   }
-  .check-icon {
-    vertical-align: middle;
-    width: 16px;
-    height: 16px;
-    visibility: hidden;
-  }
-  .check-input:checked + .check-text .check-box .check-icon {
-    visibility: visible;
-  }
-  .check-input:checked + .check-text .check-box {
-    visibility: hidden;
+  .check-input:checked + .check-text span {
+    background-color: #404BBF;
+    border: none;
+    fill: #F4F4FD;
   }
 /** ================================= */

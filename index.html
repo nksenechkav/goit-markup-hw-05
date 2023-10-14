@@ -435,9 +435,19 @@ for Your Business
               </li>
           </ul>
     </div>
+    <div class="footer-form-wrap">
+        <p class="footer-form-subtitle">Subscribe</p>
+        <form class="footer-form">
+            <input type="email" name="footer-email" class="footer-input" placeholder="E-mail">
+            <button type="submit" class="footer-form-btn">Subscribe
+                <svg class="footer-form-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-footer-arrow"></use> 
+            </button>
+        </form>
+    </div>
 </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop ">
         <div class="modal">
           <button type="button" class="modal-btn">
             <svg class="modal-btn-icon" width="8" height="8">
@@ -504,16 +514,17 @@ for Your Business
                 <input
                 type="checkbox"
                 name="modal-check"
-                class="check-input"
                 id="modal-check"
+                class="check-input visually-hidden"
               />
                 <label for="modal-check" class="check-text">
-                    <span class="check-box">
-                        <svg class="check-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-Property-1click"></use>
+                    <span>
+                        <svg class="modal-check-icon" width="10" height="8">
+                            <use href="./images/icons.svg#icon-icon-check"></use>
                           </svg>
                     </span>
-                   I accept the terms and conditions of the <a class="check-link" href="">Privacy Policy</a></label>
+                   I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+            </div>      
             <button type="submit" class="modal-btn-submit hero-btn">Send</button>
           </form>
         </div>

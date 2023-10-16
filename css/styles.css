@@ -722,9 +722,6 @@ color: #F4F4FD;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .modal-check-link {
@@ -735,6 +732,7 @@ color: #F4F4FD;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-right: 8px;
     background-color:#FCFCFC;
     border: 1px solid rgba(46, 47, 66, 0.40);
     border-radius: 2px;
@@ -743,6 +741,7 @@ color: #F4F4FD;
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   .check-input:checked + .check-text .modal-check-span {
     background-color: #404BBF;
     border: none;
